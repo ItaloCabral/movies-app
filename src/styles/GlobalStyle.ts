@@ -21,8 +21,27 @@ export const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
   }
 
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-      monospace;
+  .container {
+    max-width: 1200px;
+    height: calc(100vh - 60px);
+    background-color: #aaa;
+    background-image: url("https://wallpaperaccess.com/full/4249199.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    padding: 0 20px;
+    overflow-y: auto;
+  }
+
+  .container::-webkit-scrollbar {
+    width: 16px;
+    background-color: #3b546d;
+  }
+
+  .container::-webkit-scrollbar-thumb {
+    background-color: #1c283d;
+    width: 16px;
+    border: 3px solid #3b546d;
   }
 `;
